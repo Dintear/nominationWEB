@@ -1,2 +1,2 @@
 # Задачи из номинации WEB
-Ссылка на сайт: 
+Ссылка на сайт: https://dintear.github.io/nominationWEB/index.html
