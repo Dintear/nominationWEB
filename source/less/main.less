@@ -1,0 +1,147 @@
+// === Vars === //
+
+@gray: #a2a0a2;
+@dark-gray: #888;
+@taskfour-color: #decba5;
+
+@side-square: 90px;
+
+// === / Vars === //
+
+
+
+// === Additional styles === //
+
+@import '_additional.less';
+
+// === / Additional styles === //
+
+
+
+// === Стили для 2 задания === //
+
+.square {
+	max-width: 200px;
+	min-height: 200px;
+
+	margin: 30px auto;
+	padding: 0;
+
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&::before {
+		top: 0;
+		left: 0;
+
+		background-color: #ff8889;
+	}
+	&::after {
+		right: 0;
+		bottom: 0;
+
+		background-color: #4dee99;
+	}
+	&::after, &::before {
+		content: "";
+		
+		height: @side-square;
+		width: @side-square;
+		
+		position: absolute;
+	}
+	&__block {
+		height: @side-square;
+		width: @side-square;
+
+		z-index: 10;
+
+		background-color: #7e8aec;
+	}
+}
+
+// === / Стили для 2 задания === //
+
+
+
+// === Стили для 3 задания === //
+
+.task3 {
+	margin: 20px auto;
+	padding: 0;
+
+	border-collapse: collapse;
+	& tr > td {
+		height: 60px;
+		width: 60px;
+
+		cursor: pointer;
+
+		border: 1px solid black;
+		&::before {
+			content: "♘";
+
+			transition: opacity .2s;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			opacity: 0;
+
+			color: red;
+			font-size: calc(~'60px / 1.4');
+		}
+		&:hover {
+			&::before {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+// === / Стили для 3 задания === //
+
+
+
+// === Стили для 4 задания === //
+
+.text {
+	margin: 0;
+	padding: 20px 0;
+
+	text-align: center;
+	font-size: 36px;
+
+	&--shadow {
+		text-shadow: 18px 28px 0 @gray;
+	}
+	&--shadownblur {
+		text-shadow: 18px 28px 4px @gray;
+	}
+	&--twoshadow {
+		text-shadow: 8px 9px 4px red, -8px -9px 4px blue;
+	}
+	&--indented {
+		text-shadow: -1px -1px 1px @dark-gray;
+	}
+	&--volumetric {
+		text-shadow: 0 0 3px @gray, 1px 1px 1px @dark-gray;
+	}
+	&--countor {
+		text-shadow: 1px 0 1px @dark-gray, 0 1px 1px @dark-gray, -1px 0 1px @dark-gray, 0 -1px 1px @dark-gray,;
+	}
+	&--indented, &--volumetric, &--countor {
+		color: @taskfour-color;
+	}
+}
+
+// === / Стили для 4 задания === //
+
+
+
+// === Стили для 5 задания === //
+
+// === / Стили для 5 задания === //

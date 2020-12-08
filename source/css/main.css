@@ -1,0 +1,129 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #000400;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.section__title {
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+.square {
+  max-width: 200px;
+  min-height: 200px;
+  margin: 30px auto;
+  padding: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.square::before {
+  top: 0;
+  left: 0;
+  background-color: #ff8889;
+}
+.square::after {
+  right: 0;
+  bottom: 0;
+  background-color: #4dee99;
+}
+.square::after,
+.square::before {
+  content: "";
+  height: 90px;
+  width: 90px;
+  position: absolute;
+}
+.square__block {
+  height: 90px;
+  width: 90px;
+  z-index: 10;
+  background-color: #7e8aec;
+}
+.task3 {
+  margin: 20px auto;
+  padding: 0;
+  border-collapse: collapse;
+}
+.task3 tr > td {
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.task3 tr > td::before {
+  content: "♘";
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  color: red;
+  font-size: calc(60px / 1.4);
+}
+.task3 tr > td:hover::before {
+  opacity: 1;
+}
+.text {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 36px;
+}
+.text--shadow {
+  text-shadow: 18px 28px 0 #a2a0a2;
+}
+.text--shadownblur {
+  text-shadow: 18px 28px 4px #a2a0a2;
+}
+.text--twoshadow {
+  text-shadow: 8px 9px 4px #ff0000, -8px -9px 4px #0000ff;
+}
+.text--indented {
+  text-shadow: -1px -1px 1px #888888;
+}
+.text--volumetric {
+  text-shadow: 0 0 3px #a2a0a2, 1px 1px 1px #888888;
+}
+.text--countor {
+  text-shadow: 1px 0 1px #888888, 0 1px 1px #888888, -1px 0 1px #888888, 0 -1px 1px #888888;
+}
+.text--indented,
+.text--volumetric,
+.text--countor {
+  color: #decba5;
+}
