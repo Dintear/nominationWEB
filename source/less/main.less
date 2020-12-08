@@ -2,6 +2,7 @@
 
 @gray: #a2a0a2;
 @dark-gray: #888;
+@dark: #555;
 @taskfour-color: #decba5;
 
 @side-square: 90px;
@@ -131,7 +132,7 @@
 		text-shadow: 0 0 3px @gray, 1px 1px 1px @dark-gray;
 	}
 	&--countor {
-		text-shadow: 1px 0 1px @dark-gray, 0 1px 1px @dark-gray, -1px 0 1px @dark-gray, 0 -1px 1px @dark-gray,;
+		text-shadow: 1px 0 1px @dark, 0 1px 1px @dark, -1px 0 1px @dark, 0 -1px 1px @dark;
 	}
 	&--indented, &--volumetric, &--countor {
 		color: @taskfour-color;
@@ -143,6 +144,39 @@
 
 
 // === Стили для 5 задания === //
+
+// .unfolding__list {
+// 	&__elem {
+// 		height: 30px;
+// 		width: 450px;
+
+// 		margin: 15px 20px;
+// 		padding: 0;
+
+// 		cursor: pointer;
+
+// 		border: 1px solid #ae4c41;
+// 		&:hover ~ & {
+// 			animation: unfolding 1s ease-out;
+// 			animation-fill-mode: forwards;
+// 		}
+// 		&:not(:hover) {
+// 			animation-direction: reverse;
+// 		}
+// 	}
+// }
+
+// @keyframes unfolding {
+// 	from {
+// 		width: 450px;
+// 	}
+// 	to {
+// 		width: calc(~'450px * 2.2');
+// 	}
+// }
+
+
+// Вариант без анимации
 
 .unfolding__list {
 	&__elem {

@@ -145,7 +145,7 @@ a.link-to-back:hover {
   text-shadow: 0 0 3px #a2a0a2, 1px 1px 1px #888888;
 }
 .text--countor {
-  text-shadow: 1px 0 1px #888888, 0 1px 1px #888888, -1px 0 1px #888888, 0 -1px 1px #888888;
+  text-shadow: 1px 0 1px #555555, 0 1px 1px #555555, -1px 0 1px #555555, 0 -1px 1px #555555;
 }
 .text--indented,
 .text--volumetric,
