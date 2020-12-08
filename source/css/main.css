@@ -155,8 +155,8 @@ a.link-to-back:hover {
 .unfolding__list__elem {
   height: 30px;
   width: 450px;
-  -webkit-transition: width .6s;
-  transition: width .6s;
+  -webkit-transition: width 1s ease-out;
+  transition: width 1s ease-out;
   margin: 15px 20px;
   padding: 0;
   cursor: pointer;
