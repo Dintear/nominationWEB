@@ -19,7 +19,30 @@ h1, h2, h3, h4, p {
 a {
 	text-decoration: none;
 	&.link-to-task {
-		font-size: 24px;
+		margin: 0;
+		padding: 20px;
+
+		font-size: 20px;
+		&__block {
+			height: 100%;
+			width: 100%;
+			
+			margin: 0 auto;
+		}
+		&:hover {
+			color: #7e8aec;
+		}
+	}
+	&.link-to-back {
+		margin: 0;
+		padding: 20px;
+
+		text-transform: uppercase;
+		font-size: 20px;
+
+		position: fixed;
+		right: 0;
+		bottom: 0;
 		&:hover {
 			color: #7e8aec;
 		}

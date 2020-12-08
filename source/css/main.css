@@ -19,9 +19,28 @@ a {
   text-decoration: none;
 }
 a.link-to-task {
-  font-size: 24px;
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+}
+a.link-to-task__block {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
 }
 a.link-to-task:hover {
+  color: #7e8aec;
+}
+a.link-to-back {
+  margin: 0;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+a.link-to-back:hover {
   color: #7e8aec;
 }
 .section {
@@ -132,4 +151,17 @@ a.link-to-task:hover {
 .text--volumetric,
 .text--countor {
   color: #decba5;
+}
+.unfolding__list__elem {
+  height: 30px;
+  width: 450px;
+  -webkit-transition: width .6s;
+  transition: width .6s;
+  margin: 15px 20px;
+  padding: 0;
+  cursor: pointer;
+  border: 1px solid #ae4c41;
+}
+.unfolding__list__elem:hover ~ .unfolding__list__elem {
+  width: calc(450px * 2.2);
 }
