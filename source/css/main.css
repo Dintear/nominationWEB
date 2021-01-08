@@ -152,6 +152,38 @@ a.link-to-back:hover {
 .text--countor {
   color: #decba5;
 }
+@-webkit-keyframes unfolding {
+  from {
+    width: 450px;
+  }
+  to {
+    width: calc(450px * 2.2);
+  }
+}
+@keyframes unfolding {
+  from {
+    width: 450px;
+  }
+  to {
+    width: calc(450px * 2.2);
+  }
+}
+@-webkit-keyframes unfolding-back {
+  from {
+    width: calc(450px * 2.2);
+  }
+  to {
+    width: 450px;
+  }
+}
+@keyframes unfolding-back {
+  from {
+    width: calc(450px * 2.2);
+  }
+  to {
+    width: 450px;
+  }
+}
 .unfolding__list__elem {
   height: 30px;
   width: 450px;
@@ -160,8 +192,18 @@ a.link-to-back:hover {
   margin: 15px 20px;
   padding: 0;
   cursor: pointer;
-  border: 1px solid #ae4c41;
+  -webkit-animation-name: unfolding-back;
+          animation-name: unfolding-back;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 .unfolding__list__elem:hover ~ .unfolding__list__elem {
-  width: calc(450px * 2.2);
+  -webkit-animation-name: unfolding;
+          animation-name: unfolding;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
